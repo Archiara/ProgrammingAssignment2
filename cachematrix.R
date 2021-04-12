@@ -2,15 +2,16 @@
 ##the functions do
 
 ##The functions that is encoded is to fulfill the coursera of DataScience:R Programming
-##Week3 assignment in Github
-##The functions comprises the set,get,mean,getO,and getO)
+##Week3 assignment in Github made April 12,2021
+##Github-Archiara
 
-##Making a short a comment to the
-makeCacheMatrix <- function(x = matrix()) {             
-            o <- NULL
-            set <- function(y) {
-                    x <<- y
-                    o <<- NULL
+## The function that is produced creates a special "matrix" object that can cache O.
+##Creating a short a comment to the
+makeCacheMatrix <- function(x = matrix()) {         ## Determines the argument with default mode of "matrix"      
+            o <- NULL                               ## Put o as NULL; will hold value of matrix mean
+            set <- function(y) {                    ## Determine the set function and assign it to new
+                    x <<- y                         ## assigns value of o in parent environment
+                    o <<- NULL                      ## if new matrix is found or determined, reset o to NUL
             }
             get <- function() x      ##defines the function to get mean
             setO <- function(mean) o <<- mean           ##Assigns the value of mean   
